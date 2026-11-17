@@ -34,7 +34,7 @@ export function ApproachSection() {
             Product Approach
           </span>
           <h2 className="font-display text-3xl sm:text-5xl font-bold tracking-tight text-[var(--text-primary)]">
-            From problem discovery to shipped software.
+            From problem discovery to shipped product.
           </h2>
           <p className="font-sans text-base sm:text-lg text-[var(--text-secondary)] max-w-2xl leading-relaxed">
             How I collaborate with cross-functional teams: aligning on the core problem, defining MVP boundaries, and delivering with engineering.
