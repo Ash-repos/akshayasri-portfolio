@@ -39,7 +39,7 @@ export function HeuristicsSection() {
             Heuristics
           </span>
           <h2 className="font-display text-3xl sm:text-5xl font-bold tracking-tight text-[var(--text-primary)]">
-            How I think about software.
+            How I think about product.
           </h2>
           <p className="font-sans text-base sm:text-lg text-[var(--text-secondary)] max-w-2xl leading-relaxed">
             A few practical guidelines that keep interfaces and product decisions grounded in reality.
