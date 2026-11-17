@@ -55,6 +55,8 @@ export interface CaseStudy {
     whatWorked: string;
     whatNextV2: string;
   };
+  prdUrl?: string;
+  roadmapUrl?: string;
 }
 
 export interface PRDItem {
@@ -64,6 +66,8 @@ export interface PRDItem {
   status: "Shipped" | "In Discovery" | "Prototype";
   date: string;
   summary: string;
+  documentUrl?: string;
+  roadmapUrl?: string;
   content: {
     problem: string;
     goals: string[];
@@ -246,6 +250,8 @@ export const PORTFOLIO_DATA = {
       title: "SONA Scheduler: Academic Workflow & Intervention Automation",
       subtitle:
         "Transforming manual, fragmented counseling logs into an automated early-intervention system for at-risk engineering students.",
+      prdUrl: "https://docs.google.com/document/d/1b_d5pv5jfVUsdWPBEPiSFxbaXyRxtc-dVsC35M4lqWc/edit?tab=t.0",
+      roadmapUrl: "https://docs.google.com/document/d/1b_d5pv5jfVUsdWPBEPiSFxbaXyRxtc-dVsC35M4lqWc/edit?tab=t.eg1lhehgrhv7",
       tagline: "User Research • Workflow Optimization • B2B/EdTech",
       role: "Product Lead & Lead Developer",
       team: "Department Initiative (Direct collaboration with HOD & 8 Faculty members)",
@@ -647,6 +653,8 @@ export const PORTFOLIO_DATA = {
       product: "SONA Scheduler",
       status: "Shipped",
       date: "Q1 2024",
+      documentUrl: "https://docs.google.com/document/d/1b_d5pv5jfVUsdWPBEPiSFxbaXyRxtc-dVsC35M4lqWc/edit?tab=t.0",
+      roadmapUrl: "https://docs.google.com/document/d/1b_d5pv5jfVUsdWPBEPiSFxbaXyRxtc-dVsC35M4lqWc/edit?tab=t.eg1lhehgrhv7",
       summary:
         "Product requirements for streamlining student counseling workflows, reducing administrative friction for 8+ professors.",
       content: {

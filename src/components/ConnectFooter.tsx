@@ -46,14 +46,13 @@ export function ConnectFooter() {
             {/* Left Narrative (7 cols) */}
             <div className="lg:col-span-7 space-y-4">
               <span className="text-xs font-mono uppercase tracking-[0.18em] text-[var(--text-muted)] block font-semibold">
-                Let's Connect
+                Get in Touch
               </span>
               <h2 className="font-display text-3xl sm:text-5xl font-bold text-[var(--text-primary)] tracking-tight">
-                You're right... <br className="hidden sm:inline" />
-                we should connect!
+                Let's start a conversation.
               </h2>
               <p className="font-sans text-base sm:text-lg text-[var(--text-secondary)] leading-relaxed max-w-xl font-normal">
-                Open to product management opportunities and technical collaborations. Whether you want to discuss LocalLens AI, review PRD tradeoffs, or explore roles, my inbox is always open.
+                Currently open to Product Management opportunities, early-stage product strategy, and technical collaborations. If you're building products at the intersection of AI and user workflows, I’d love to connect.
               </p>
 
               {/* Direct Instant Action Pills */}
@@ -147,9 +146,9 @@ export function ConnectFooter() {
         {/* Quiet Minimal Footer Row */}
         <div className="flex flex-col sm:flex-row items-center justify-between gap-3 text-xs font-mono text-[var(--text-muted)] pt-6 border-t border-[var(--border-subtle)]">
           <div className="flex items-center gap-2">
-            <span>© All Rights Reserved.</span>
+            <span>© 2026 Akshaya Sri B.</span>
             <span>•</span>
-            <span className="text-[var(--text-primary)] font-medium font-display">Akshaya Sri B</span>
+            <span>All Rights Reserved.</span>
             <span className="hidden sm:inline">•</span>
             <span className="hidden sm:inline">Salem, India</span>
           </div>

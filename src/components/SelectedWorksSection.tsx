@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import { PORTFOLIO_DATA } from "@/data/portfolioData";
-import { CheckCircle2, ChevronRight } from "lucide-react";
+import { CheckCircle2, ChevronRight, ArrowUpRight, FileText, Compass } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 export function SelectedWorksSection() {
@@ -80,11 +80,54 @@ export function SelectedWorksSection() {
                 </span>
               </div>
               <h3 className="font-display text-2xl sm:text-4xl font-bold text-[var(--text-primary)] tracking-tight">
-                {current.title}
+                {current.prdUrl ? (
+                  <a
+                    href={current.prdUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2.5 hover:text-[#ff4500] transition-colors group/title cursor-pointer"
+                    title="Open Document in Google Docs"
+                  >
+                    <span>{current.title}</span>
+                    <ArrowUpRight className="w-5 h-5 sm:w-6 sm:h-6 text-[#ff4500] opacity-80 group-hover/title:opacity-100 group-hover/title:translate-x-0.5 group-hover/title:-translate-y-0.5 transition-all shrink-0" />
+                  </a>
+                ) : (
+                  current.title
+                )}
               </h3>
               <p className="font-sans text-base sm:text-lg text-[var(--text-secondary)] leading-relaxed max-w-3xl">
                 {current.subtitle}
               </p>
+
+              {/* Direct Document Hyperlinks */}
+              {(current.prdUrl || current.roadmapUrl) && (
+                <div className="pt-2 flex flex-wrap items-center gap-2.5">
+                  {current.prdUrl && (
+                    <a
+                      href={current.prdUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl text-xs font-mono font-semibold text-[var(--text-primary)] bg-black/[0.04] dark:bg-white/[0.06] border border-[var(--border-subtle)] hover:border-[#ff4500]/40 hover:text-[#ff4500] transition-all shadow-xs cursor-pointer group/doc"
+                    >
+                      <FileText className="w-3.5 h-3.5 text-[#ff4500]" />
+                      <span>PRD</span>
+                      <ArrowUpRight className="w-3 h-3 group-hover/doc:translate-x-0.5 group-hover/doc:-translate-y-0.5 transition-transform" />
+                    </a>
+                  )}
+                  {current.roadmapUrl && (
+                    <a
+                      href={current.roadmapUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl text-xs font-mono font-semibold text-[var(--text-primary)] bg-black/[0.04] dark:bg-white/[0.06] border border-[var(--border-subtle)] hover:border-[#ff4500]/40 hover:text-[#ff4500] transition-all shadow-xs cursor-pointer group/doc"
+                    >
+                      <Compass className="w-3.5 h-3.5 text-[#ff4500]" />
+                      <span>Product Roadmap</span>
+                      <ArrowUpRight className="w-3 h-3 group-hover/doc:translate-x-0.5 group-hover/doc:-translate-y-0.5 transition-transform" />
+                    </a>
+                  )}
+                </div>
+              )}
             </div>
 
             {/* 2-Column Responsive Body */}
@@ -166,7 +209,37 @@ export function SelectedWorksSection() {
 
             {/* Bottom Actions */}
             <div className="pt-5 flex flex-wrap items-center justify-between border-t border-[var(--border-subtle)] text-xs text-[var(--text-muted)] gap-3">
-              <span className="font-mono">Role: <strong className="text-[var(--text-primary)] font-semibold font-display">{current.role}</strong></span>
+              <div className="flex flex-wrap items-center gap-3">
+                <span className="font-mono">Role: <strong className="text-[var(--text-primary)] font-semibold font-display">{current.role}</strong></span>
+                {current.prdUrl && (
+                  <>
+                    <span>•</span>
+                    <a
+                      href={current.prdUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1 text-[var(--text-primary)] font-mono hover:text-[#ff4500] hover:underline font-semibold"
+                    >
+                      <span>PRD Doc</span>
+                      <ArrowUpRight className="w-3 h-3 text-[#ff4500]" />
+                    </a>
+                  </>
+                )}
+                {current.roadmapUrl && (
+                  <>
+                    <span>•</span>
+                    <a
+                      href={current.roadmapUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1 text-[var(--text-primary)] font-mono hover:text-[#ff4500] hover:underline font-semibold"
+                    >
+                      <span>Roadmap</span>
+                      <ArrowUpRight className="w-3 h-3" />
+                    </a>
+                  </>
+                )}
+              </div>
               <a
                 href="#connect"
                 className="inline-flex items-center gap-1.5 font-display font-semibold text-xs sm:text-sm text-[#ff4500] hover:text-[#ff5714] transition-colors"

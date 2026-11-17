@@ -9,8 +9,8 @@ export function FaqSection() {
 
   const faqs = [
     {
-      q: "When does working together make sense?",
-      a: "When you have a product, feature, or workflow problem that lives at the intersection of AI capabilities and messy human behavior. I excel when you need someone who can conduct user discovery, write unambiguous PRDs, talk engineering language with developers, and stay hands on through shipping.",
+      q: "What roles and opportunities are you looking for?",
+      a: "I am actively seeking Product Management roles (PM / APM) at product companies and startups building AI-enabled software, developer tools, or data-intensive workflows. I thrive where teams need someone who can conduct user discovery, write unambiguous PRDs, talk system architecture with engineers, and stay hands-on through shipping.",
     },
     {
       q: "What domains have you worked with?",

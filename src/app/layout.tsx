@@ -40,6 +40,11 @@ export const metadata: Metadata = {
     description:
       "Turning complex AI systems into intuitive products that people use. Case studies, interactive PRDs, and delivery metrics.",
   },
+  icons: {
+    icon: [{ url: "/favicon.svg", type: "image/svg+xml" }],
+    shortcut: "/favicon.svg",
+    apple: "/favicon.svg",
+  },
 };
 
 export default function RootLayout({
@@ -54,6 +59,9 @@ export default function RootLayout({
       data-theme="dark"
       suppressHydrationWarning
     >
+      <head>
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+      </head>
       <body className="min-h-full flex flex-col antialiased selection:bg-sky-500 selection:text-white">
         <ThemeProvider>{children}</ThemeProvider>
       </body>

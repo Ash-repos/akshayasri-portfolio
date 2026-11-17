@@ -7,7 +7,9 @@ import {
   Copy, 
   Check, 
   Target, 
-  AlertCircle 
+  AlertCircle,
+  ArrowUpRight,
+  Compass
 } from "lucide-react";
 import { motion } from "framer-motion";
 
@@ -80,13 +82,41 @@ export function InteractivePrdViewer() {
               </span>
             </div>
 
-            <button
-              onClick={copyPrdSummary}
-              className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded text-xs font-mono border border-[var(--border-subtle)] bg-[var(--bg-surface)] hover:bg-[var(--bg-surface-elevated)] text-[var(--text-secondary)] transition-colors"
-            >
-              {copied ? <Check className="w-3 h-3 text-emerald-500" /> : <Copy className="w-3 h-3" />}
-              {copied ? "Copied" : "Copy Brief"}
-            </button>
+            <div className="flex items-center gap-2">
+              {currentPrd.documentUrl && (
+                <a
+                  href={currentPrd.documentUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded text-xs font-mono border border-[#ff4500]/30 bg-[#ff4500]/10 hover:bg-[#ff4500]/20 text-[#ff4500] transition-colors"
+                  title="Open PRD in Google Docs"
+                >
+                  <FileText className="w-3 h-3" />
+                  <span>Google Doc</span>
+                  <ArrowUpRight className="w-3 h-3" />
+                </a>
+              )}
+              {currentPrd.roadmapUrl && (
+                <a
+                  href={currentPrd.roadmapUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hidden sm:inline-flex items-center gap-1.5 px-2.5 py-1 rounded text-xs font-mono border border-[var(--border-subtle)] bg-[var(--bg-surface)] hover:text-[#ff4500] hover:border-[#ff4500]/30 text-[var(--text-secondary)] transition-colors"
+                  title="Open Product Roadmap in Google Docs"
+                >
+                  <Compass className="w-3 h-3 text-[#ff4500]" />
+                  <span>Roadmap</span>
+                  <ArrowUpRight className="w-3 h-3" />
+                </a>
+              )}
+              <button
+                onClick={copyPrdSummary}
+                className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded text-xs font-mono border border-[var(--border-subtle)] bg-[var(--bg-surface)] hover:bg-[var(--bg-surface-elevated)] text-[var(--text-secondary)] transition-colors cursor-pointer"
+              >
+                {copied ? <Check className="w-3 h-3 text-emerald-500" /> : <Copy className="w-3 h-3" />}
+                {copied ? "Copied" : "Copy Brief"}
+              </button>
+            </div>
           </div>
 
           {/* Sub Navigation */}

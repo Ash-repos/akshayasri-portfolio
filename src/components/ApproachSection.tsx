@@ -7,21 +7,21 @@ export function ApproachSection() {
   const steps = [
     {
       step: "01",
-      title: "Understand the work",
+      title: "Uncover the root problem",
       description:
-        "Show me what you’re trying to achieve and how things work today. I talk with the people closest to the problem, understand the constraints, and help decide what would be worth changing.",
+        "I engage directly with users and stakeholders, map real-world constraints, and identify high-leverage opportunities worth solving before writing a single line of spec.",
     },
     {
       step: "02",
-      title: "Choose a useful first version",
+      title: "Scope a testable MVP",
       description:
-        "I turn that understanding into a direction we can test: a flow, a PRD, or a working prototype. We make the tradeoffs understandable and choose enough scope to learn without trying to build everything at once.",
+        "I turn discovery insights into actionable product artifacts: unambiguous PRDs, explicit user journeys, and tightly scoped MVP boundaries with clear engineering tradeoffs.",
     },
     {
       step: "03",
-      title: "Build and learn",
+      title: "Ship, measure, and iterate",
       description:
-        "I build hands on or collaborate with engineering teams through delivery. We test with real users, refine what matters, and ensure the resulting system is maintainable and resilient.",
+        "I partner hands-on with engineering through delivery, validate releases against quantitative metrics, and establish continuous feedback loops to refine what matters.",
     },
   ];
 
@@ -31,13 +31,13 @@ export function ApproachSection() {
         {/* Section Header */}
         <div className="mb-8 space-y-2">
           <span className="text-xs font-mono uppercase tracking-[0.18em] text-[var(--text-muted)] block font-semibold">
-            Working Together
+            Product Approach
           </span>
           <h2 className="font-display text-3xl sm:text-5xl font-bold tracking-tight text-[var(--text-primary)]">
-            From understanding to delivery.
+            From problem discovery to shipped software.
           </h2>
           <p className="font-sans text-base sm:text-lg text-[var(--text-secondary)] max-w-2xl leading-relaxed">
-            We agree on the problem, a useful first version, and who owns what along the way.
+            How I collaborate with cross-functional teams: aligning on the core problem, defining MVP boundaries, and delivering with engineering.
           </p>
         </div>
 

@@ -93,7 +93,7 @@ export function MProganoHero() {
           >
             <div className="space-y-3.5 max-w-5xl">
               <h2 className="font-display text-xl sm:text-2xl lg:text-3xl font-bold text-[var(--text-primary)] tracking-tight text-balance">
-                Akshaya Sri B: Product Builder at the intersection of AI and real user problems.
+                Product Builder at the intersection of AI and real user problems.
               </h2>
               <p className="font-sans text-base sm:text-lg font-normal text-[var(--text-secondary)] leading-relaxed">
                 I find problems worth solving, define what to build, and build it hands-on with the people who’ll use it. My work spans AI-powered discovery for everyday users and workflow automation for staff and businesses.
