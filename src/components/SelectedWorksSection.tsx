@@ -80,20 +80,7 @@ export function SelectedWorksSection() {
                 </span>
               </div>
               <h3 className="font-display text-2xl sm:text-4xl font-bold text-[var(--text-primary)] tracking-tight">
-                {current.prdUrl ? (
-                  <a
-                    href={current.prdUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2.5 hover:text-[#ff4500] transition-colors group/title cursor-pointer"
-                    title="Open Document in Google Docs"
-                  >
-                    <span>{current.title}</span>
-                    <ArrowUpRight className="w-5 h-5 sm:w-6 sm:h-6 text-[#ff4500] opacity-80 group-hover/title:opacity-100 group-hover/title:translate-x-0.5 group-hover/title:-translate-y-0.5 transition-all shrink-0" />
-                  </a>
-                ) : (
-                  current.title
-                )}
+                {current.title}
               </h3>
               <p className="font-sans text-base sm:text-lg text-[var(--text-secondary)] leading-relaxed max-w-3xl">
                 {current.subtitle}

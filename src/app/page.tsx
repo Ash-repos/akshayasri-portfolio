@@ -2,6 +2,7 @@ import { SquaredNavbar } from "@/components/SquaredNavbar";
 import { MProganoHero } from "@/components/MProganoHero";
 import { CapabilitiesSection } from "@/components/CapabilitiesSection";
 import { SelectedWorksSection } from "@/components/SelectedWorksSection";
+import { TeardownsSection } from "@/components/TeardownsSection";
 import { ApproachSection } from "@/components/ApproachSection";
 import { HeuristicsSection } from "@/components/HeuristicsSection";
 import { FaqSection } from "@/components/FaqSection";
@@ -15,6 +16,7 @@ export default function Home() {
         <MProganoHero />
         <CapabilitiesSection />
         <SelectedWorksSection />
+        <TeardownsSection />
         <ApproachSection />
         <HeuristicsSection />
         <FaqSection />

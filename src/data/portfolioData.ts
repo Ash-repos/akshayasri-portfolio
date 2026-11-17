@@ -158,6 +158,8 @@ export const PORTFOLIO_DATA = {
       title: "LocalLens AI: Gemini-Powered Google Maps Discovery Layer",
       subtitle:
         "Bridging the discovery gap between unindexed real-time merchant offers and multimodal Google Maps users.",
+      prdUrl: "https://docs.google.com/document/d/18lzx0NvrsOPWMyeQv08KGWBpvzxrlqRXy6bDEfmfb-k/edit?tab=t.0",
+      roadmapUrl: "https://docs.google.com/document/d/18lzx0NvrsOPWMyeQv08KGWBpvzxrlqRXy6bDEfmfb-k/edit?tab=t.ova6n07cv2sy",
       tagline: "Multimodal AI • PRD Scoping • Grounded Verification",
       role: "Product Manager & Technical Co-builder",
       team: "2 Engineers (PM + Full-stack developer)",
@@ -586,6 +588,8 @@ export const PORTFOLIO_DATA = {
       product: "LocalLens AI",
       status: "Shipped",
       date: "Q3 2024",
+      documentUrl: "https://docs.google.com/document/d/18lzx0NvrsOPWMyeQv08KGWBpvzxrlqRXy6bDEfmfb-k/edit?tab=t.0",
+      roadmapUrl: "https://docs.google.com/document/d/18lzx0NvrsOPWMyeQv08KGWBpvzxrlqRXy6bDEfmfb-k/edit?tab=t.ova6n07cv2sy",
       summary:
         "Comprehensive Product Requirements Document defining the problem, user journeys, functional constraints, and hallucination guardrails for grounded local discovery.",
       content: {

@@ -44,10 +44,22 @@ export function CapabilitiesSection() {
 
             {/* Bottom Squared Inset Card */}
             <div className="p-5 sq-card-inset flex flex-col justify-start gap-2">
-              <div className="text-xs font-mono font-bold text-[var(--text-primary)] uppercase tracking-wider flex items-center gap-1.5">
-                <span className="w-1.5 h-1.5 rounded-full bg-[#ff4500]" />
-                <span>Example in Practice: LocalLens AI</span>
-              </div>
+              <a
+                href="https://docs.google.com/document/d/18lzx0NvrsOPWMyeQv08KGWBpvzxrlqRXy6bDEfmfb-k/edit?tab=t.0"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-xs font-mono font-bold text-[var(--text-primary)] hover:text-[#ff4500] uppercase tracking-wider flex items-center justify-between transition-colors group/link cursor-pointer"
+                title="Open LocalLens AI PRD in Google Docs"
+              >
+                <span className="flex items-center gap-1.5">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#ff4500]" />
+                  <span>Example in Practice: LocalLens AI</span>
+                </span>
+                <span className="inline-flex items-center gap-1 text-[11px] text-[#ff4500] opacity-80 group-hover/link:opacity-100 transition-opacity">
+                  <span>PRD</span>
+                  <ArrowUpRight className="w-3 h-3 group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5 transition-transform" />
+                </span>
+              </a>
               <p className="font-sans text-xs sm:text-sm text-[var(--text-secondary)] leading-relaxed">
                 Identified that temporal local promotions are invisible on Google Maps. Wrote the PRD, defined MVP boundaries, and co-built a working prototype with Gemini API and FastAPI that delivers grounded, attributed answers in under 800ms.
               </p>

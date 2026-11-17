@@ -20,6 +20,7 @@ export function SquaredNavbar() {
     { name: "Home", href: "#home" },
     { name: "Capabilities", href: "#capabilities" },
     { name: "Works", href: "#works" },
+    { name: "Teardowns", href: "#teardowns" },
     { name: "Approach", href: "#approach" },
     { name: "Heuristics", href: "#heuristics" },
     { name: "FAQs", href: "#faqs" },
